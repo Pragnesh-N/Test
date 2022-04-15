@@ -18,12 +18,3 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'debug'
-- task: AndroidSigning@2
-  inputs:
-    apkFiles: '**/*.apk'
-    jarsign: true
-    jarsignerKeystoreFile: 'pathToYourKeystoreFile'
-    jarsignerKeystorePassword: '123456'
-    jarsignerKeystoreAlias: 'key0'
-    jarsignerKeyPassword: '123456'
-    zipalign: true
